@@ -1,8 +1,13 @@
-name: TDBX Vale Checks
+name: vale-checks
 on:
   push:
     branches-ignore:
       - master
+with:
+  version: 2.17.0
+  files: source/
+  reporter: github-pr-check
+
 jobs:
   vale:
     name: TDBX Vale rules
