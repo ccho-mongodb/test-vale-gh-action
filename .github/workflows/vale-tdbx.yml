@@ -3,10 +3,7 @@ on:
   push:
     branches-ignore:
       - master
-with:
-  version: 2.17.0
-  files: source/
-  reporter: github-pr-check
+
 
 jobs:
   vale:
@@ -15,3 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: errata-ai/vale-action@reviewdog
+        with:
+          version: 2.17.0
+          files: source/
+          reporter: github-pr-check
