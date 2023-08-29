@@ -11,8 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: updated-files
+        id: files
+        uses: masesgroup/retrieve-changed-files@v2
+        with:
+          format: 'csv'
       - uses: errata-ai/vale-action@reviewdog
         with:
-          version: 2.17.0
-          files: source/
+          separator: ","
+          files: ${{ steps.files.outputs.added_modified }}
           reporter: github-pr-check
+          fail_on_error: true
