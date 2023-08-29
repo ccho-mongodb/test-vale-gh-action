@@ -54,7 +54,7 @@ What's New in 4.11
 What's New in 4.10
 ------------------
 
-Test test
+Test test test
 New features of the 4.10 driver release include:
 
 - Implementation of the ``Accumulators.percentile()`` and
