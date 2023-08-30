@@ -10,12 +10,10 @@ jobs:
     name: TDBX Vale rules
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: updated-files
-        id: files
-        uses: masesgroup/retrieve-changed-files@v2
-        with:
-          format: 'csv'
+      - id: files
+      - uses: jitterbit/get-changed-files@v1
+          with:
+            format: 'csv'
       - uses: errata-ai/vale-action@reviewdog
         with:
           separator: ","
