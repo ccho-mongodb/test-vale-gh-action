@@ -12,10 +12,11 @@ jobs:
       - name: checkout 
         uses: actions/checkout@master
 
-
       - name: tdbx-vale-check
-        uses: errata-ai/vale-action@v1.4.0
+        uses: errata-ai/vale-action@reviewdog
         with:
-          files: __onlyModified
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          files: source/
+          reporter: github-pr-check
+          fail_on_error: true
+          filter_mode: file
+          token: ${{secrets.GITHUB_TOKEN}}
