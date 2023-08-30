@@ -11,8 +11,8 @@ jobs:
     steps:
       - id: files
       - uses: jitterbit/get-changed-files@v1
-          with:
-            format: 'csv'
+        with:
+          format: 'csv'
       - uses: errata-ai/vale-action@reviewdog
         with:
           separator: ","
