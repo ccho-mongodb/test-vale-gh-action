@@ -9,19 +9,11 @@ jobs:
     name: TDBX Vale rules
     runs-on: ubuntu-latest
     steps:
-      - id: files
-        uses: jitterbit/get-changed-files@v1
+      - name: checkout 
+        uses: actions/checkout@master
+
+
+      - name: tdbx-vale-check
+        uses: errata-ai/vale-action@v1.4.0
         with:
-          format: 'csv'
-      - run: |
-          mapfile -d ',' -t added_modified_files < <(printf '%s,' '${{ steps.files.outputs.added_modified }}')
-          for added_modified_file in "${added_modified_files[@]}"; do
-            echo "- ${added_modified_file}"
-          done
-      - uses: actions/checkout@v3
-      - uses: errata-ai/vale-action@reviewdog
-        with:
-          separator: ","
-          files: ${{ steps.files.outputs.added_modified }}
-          reporter: github-pr-check
-          fail_on_error: true
+          files: __onlyModified
