@@ -18,6 +18,7 @@ jobs:
           for added_modified_file in "${added_modified_files[@]}"; do
             echo "- ${added_modified_file}"
           done
+      - uses: actions/checkout@v3
       - uses: errata-ai/vale-action@reviewdog
         with:
           separator: ","
