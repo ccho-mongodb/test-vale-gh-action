@@ -10,12 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout 
-        uses: actions/checkout@master
 
-      - name: tdbx-vale-check
-        uses: errata-ai/vale-action@master
-        with:
-          files: __onlyModified
-          onlyAnnotateModifiedLines: true
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        uses: errata-ai/vale-action@reviewdog
+         with:
+          files: source/
+          reporter: github-pr-check
+          fail_on_error: true
+          filter_mode: file
+          token: ${{secrets.GITHUB_TOKEN}}
+
