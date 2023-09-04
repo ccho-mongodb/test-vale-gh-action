@@ -2,7 +2,7 @@ extends: existence
 message: "Avoid negative statements where possible ('%s')."
 link: 'https://docs.mongodb.com/meta/style-guide/writing/use-positive-statements/'
 ignorecase: true
-level: suggestion
+level: warn
 nonword: true
 tokens:
   - didn't

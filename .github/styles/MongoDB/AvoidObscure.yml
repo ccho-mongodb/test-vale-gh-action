@@ -1,7 +1,7 @@
 extends: substitution
 message: "Use '%s' instead of '%s'."
 link: 'https://docs.mongodb.com/meta/style-guide/terminology/general-term-guidelines/avoid-obscure-words/'
-level: suggestion
+level: error
 ignorecase: true
 action:
   name: replace

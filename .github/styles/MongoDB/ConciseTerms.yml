@@ -1,7 +1,7 @@
 extends: substitution
 message: "'%s' is preferred over '%s'."
 link: 'https://docs.mongodb.com/meta/style-guide/terminology/concise-terms/'
-level: suggestion
+level: error
 ignorecase: false
 action:
   name: replace

@@ -2,7 +2,7 @@
 extends: existence
 message: "Don't use periods with acronyms or initialisms such as '%s'."
 link: 'https://docs.mongodb.com/meta/style-guide/style/abbreviations/'
-level: error
+level: suggestion
 nonword: true
 tokens:
   - '\b(?:[A-Z]\.){3,}'

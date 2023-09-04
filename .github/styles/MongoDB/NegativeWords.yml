@@ -1,7 +1,7 @@
 extends: substitution
 message: "Use '%s' instead of the negative word '%s'."
 link: 'https://docs.mongodb.com/meta/style-guide/writing/use-positive-statements/#avoid-negative-words'
-level: warning
+level: error
 ignorecase: true
 action:
   name: replace

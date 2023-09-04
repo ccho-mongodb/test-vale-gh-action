@@ -3,7 +3,7 @@
 extends: existence
 message: "Use the Oxford comma in '%s'."
 link: 'https://docs.mongodb.com/meta/style-guide/style/punctuation/#commas'
-level: suggestion
+level: error
 nonword: true
 tokens:
   - '(?:[^\s,]+,){1,} \w+ (?:and|or) \w+[.?!]'
