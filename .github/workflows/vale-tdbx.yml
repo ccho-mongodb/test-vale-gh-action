@@ -16,8 +16,7 @@ jobs:
         uses: errata-ai/vale-action@reviewdog
         with:
           reporter: github-pr-check
-          vale_flags: "--minAlertLevel=error --no-exit"
+          files: source
           fail_on_error: true
           filter_mode: diff_context
           token: ${{secrets.GITHUB_TOKEN}}
-
