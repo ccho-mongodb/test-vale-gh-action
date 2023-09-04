@@ -21,6 +21,6 @@ jobs:
         uses: errata-ai/vale-action@reviewdog
         with:
           reporter: github-pr-check
-          files: steps.files.outputs.added_modified
+          files: ${{steps.files.outputs.added_modified}}
           fail_on_error: true
           token: ${{secrets.GITHUB_TOKEN}}
