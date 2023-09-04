@@ -9,13 +9,12 @@ jobs:
     name: TDBX Vale rules
     runs-on: ubuntu-latest
     steps:
-      - name: checkout 
+      - name: checkout
 
         uses: errata-ai/vale-action@reviewdog
         with:
           files: source/
-          reporter: github-pr-check
           fail_on_error: true
-          filter_mode: file
+          filter_mode: diff_context
           token: ${{secrets.GITHUB_TOKEN}}
 
