@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@master
 
       - id: files
-        uses: jitterbit/get-changed-files@v1
+        uses: masesgroup/retrieve-changed-files@v2
         with:
           format: 'csv'
       - run: |
