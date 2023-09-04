@@ -17,5 +17,5 @@ jobs:
         with:
           files: __onlyModified
           onlyAnnotateModifiedLines: true
-          version: 2.28.2
-          token: ${{secrets.GITHUB_TOKEN}}
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
