@@ -16,7 +16,7 @@ jobs:
         uses: errata-ai/vale-action@reviewdog
         with:
           files: source/
-          reporter: github-pr-check
-          fail_on_error: true
           filter_mode: file
+          fail_on_error: true
+          version: 2.28.2
           token: ${{secrets.GITHUB_TOKEN}}
