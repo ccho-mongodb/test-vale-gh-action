@@ -12,7 +12,7 @@ jobs:
       - name: checkout 
 
         uses: errata-ai/vale-action@reviewdog
-         with:
+        with:
           files: source/
           reporter: github-pr-check
           fail_on_error: true
