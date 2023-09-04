@@ -1,5 +1,5 @@
 extends: existence
-message: "Avoid the subjuntive '%s'."
+message: "Avoid the subjunctive '%s'."
 link: 'https://docs.mongodb.com/meta/style-guide/writing/write-to-the-user/#avoid-the-subjunctive-mood'
 ignorecase: true
 level: error

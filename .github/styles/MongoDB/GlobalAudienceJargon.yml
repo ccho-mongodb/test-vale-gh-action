@@ -1,7 +1,7 @@
 extends: substitution
 message: "Consider using '%s' instead of the jargon '%s'."
 link: 'https://docs.mongodb.com/meta/style-guide/terminology/terms-for-global-audience/#use-jargon-with-care'
-level: suggestion
+level: error
 ignorecase: true
 action:
   name: replace

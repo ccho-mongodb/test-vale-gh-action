@@ -1,7 +1,7 @@
 extends: substitution
 message: "Consider using '%s' instead of the oppressive language '%s'."
 link: 'https://docs.mongodb.com/meta/style-guide/terminology/terms-for-global-audience/#use-non-oppressive-language'
-level: suggestion
+level: warning
 ignorecase: true
 action:
   name: replace

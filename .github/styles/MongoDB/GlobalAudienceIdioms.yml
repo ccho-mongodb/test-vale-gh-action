@@ -1,7 +1,7 @@
 extends: substitution
 message: "Use '%s' instead of the idiom/colloquialism '%s'."
 link: 'https://docs.mongodb.com/meta/style-guide/terminology/terms-for-global-audience/#don-t-use-idioms-or-colloquialisms'
-level: error
+level: warning
 ignorecase: true
 action:
   name: replace

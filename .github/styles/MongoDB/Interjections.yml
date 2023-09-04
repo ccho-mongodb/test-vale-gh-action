@@ -4,6 +4,6 @@ extends: existence
 message: "Use interjections with care."
 link: 'https://docs.mongodb.com/meta/style-guide/writing/use-interjections-with-care/'
 nonword: true
-level: warning
+level: suggestion
 tokens:
   - '\w!(?:\s|$)'
