@@ -13,10 +13,9 @@ jobs:
         uses: actions/checkout@master
 
       - name: tdbx-vale-check
-        uses: errata-ai/vale-action@reviewdog
+        uses: errata-ai/vale-action@master
         with:
-          files: source/
-          filter_mode: file
-          fail_on_error: true
+          files: __onlyModified
+          onlyAnnotateModifiedLines: true
           version: 2.28.2
           token: ${{secrets.GITHUB_TOKEN}}
