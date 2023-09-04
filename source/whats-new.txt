@@ -32,6 +32,8 @@ Learn what's new in:
 Upcoming Breaking Changes
 -------------------------
 
+12334
+
 - `MapReduceIterable <{+api+}/apidocs/mongodb-driver-sync/com/mongodb/client/MapReduceIterable.html>`__
   and map-reduce methods on `MongoCollection <{+api+}/apidocs/mongodb-driver-sync/com/mongodb/client/MongoCollection.html#mapReduce(com.mongodb.client.ClientSession,java.lang.String,java.lang.String)>`__
   are deprecated in MongoDB v4.2 and later. They will be replaced by the
