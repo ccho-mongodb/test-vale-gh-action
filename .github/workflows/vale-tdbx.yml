@@ -12,15 +12,12 @@ jobs:
       - name: checkout
         uses: actions/checkout@master
 
-      - name: Changed files
-        uses: actions/checkout@v2
-        with: 
-          fetch-depth: 0
-        id: changes
-        # Set outputs using the command.
-        run: |
-          echo "::set-output name=all::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)"
-          echo "::set-output name=ts::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | grep .ts$ | xargs)"
+      - id: files
+        uses: jitterbit/get-changed-files@v1
+        with:
+          format: 'csv'
+      - run: |
+          mapfile -d ',' -t added_modified_files < <(printf '%s,' '${{ steps.files.outputs.added_modified }}')
 
       - name: tdbx-vale
         uses: errata-ai/vale-action@reviewdog
