@@ -417,6 +417,5 @@ What's New in 4.0
 
 This release adds no new features.
 
-Avoid
 Girl boy
 another
