@@ -1,8 +1,8 @@
 name: vale-checks
 on:
-  pull_request_target:
-    branches:
-    - master
+  pull_request:
+    paths:
+      - "source/**"
 
 jobs:
   vale:
