@@ -1,5 +1,5 @@
 extends: substitution
-message: "Use %s instead of the contraction '%s' to avoid confustion."
+message: "Use %s instead of the contraction '%s' to avoid confusion."
 link: 'https://docs.mongodb.com/meta/style-guide/style/contractions/'
 level: suggestion
 ignorecase: true

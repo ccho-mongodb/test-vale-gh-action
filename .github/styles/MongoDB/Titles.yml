@@ -1,5 +1,5 @@
 extends: capitalization
-message: "'%s' should be in heading case."
+message: "'%s' should be in title case."
 link: 'https://docs.mongodb.com/meta/style-guide/style/titles-and-headings/'
 level: warning
 scope: heading

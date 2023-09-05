@@ -1,5 +1,5 @@
 extends: conditional
-message: "Spell out '%s', unless it is a common abbreviation is common it is not
+message: "Spell out '%s', unless it is a commong abbreviation is common it is not
 the first use in this article or topic."
 link: 'https://docs.mongodb.com/meta/style-guide/style/abbreviations/'
 level: suggestion

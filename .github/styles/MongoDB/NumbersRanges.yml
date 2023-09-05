@@ -1,5 +1,5 @@
 extends: existence
-message: "Unless space is limited use either 'from 10 to 20 diagrams' or
+message: "Unless space is limited, use either 'from 10 to 20 diagrams' or
 'between 2010 and 2020' instead of '%s'."
 link: 'https://docs.mongodb.com/meta/style-guide/style/numbers/'
 ignorecase: true
