@@ -103,7 +103,7 @@ This action currently depends on the following GitHub actions:
 
 # Install Vale Rules for the CLI
 
-1. [Install vale](https://vale.sh/docs/vale-cli/installation/).
+1. [Install vale]([https://vale.sh/docs/vale-cli/installation/](https://github.com/10gen/mongodb-vale/tree/main)).
 
 2. Install the ``vale`` rules and ``vale.ini`` configuration file.
 The most convenient way to keep your **vale** CLI configured with
