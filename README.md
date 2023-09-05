@@ -9,6 +9,12 @@ low rate of false-positives.
 Other existing and new rules should be added when we determine that
 they can produce sufficiently low instances of false-positives.
 
+:warning: Changes between rulesets:
+> Changes to the logic in rules must be made to both the set of rules
+> contained in this directory structure as well as the original
+> ones. However, the severity levels are intentionally modified in
+> order to simplify the TDBX workflow.
+
 Continue reading to see how to install the GitHub action and how to
 install the rules for use with the CLI.
 
@@ -113,6 +119,12 @@ following alias in your ``zshrc``:
 ```bash
 alias vale-tdbx="vale --config='/path/to/repo/tdbx/.vale.ini"
 ```
+
+The ``vale.ini`` file expects a relative file structure that
+references the location of the ``yml`` rule files. If you
+need to run **vale** from a configuration file in a different
+location, make sure that it references the correct set of
+rules.
 
 If you run **vale** with other sets of rules, you can create
 a separate alias that references a different **vale.ini** file.
