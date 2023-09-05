@@ -62,10 +62,10 @@ authorized contributors, of that docs repo.
 The output shows you the files you changed in the PR and any
 rule violations that vale identified.
 
-Due to a known issue, the GitHub action does not fail when vale reports
-errors. To check the results of the run, click the green checkmark next
-to the commit in the Github **Conversation** tab. Then, click the **Details** 
-link to view the log.
+The GitHub action should fail and display a red "X" when vale reports
+errors. To check the detailed results of the run, click the green checkmark or
+red X next to the commit in the Github **Conversation** tab. Then, click the
+**Details** link to view the log.
 
 Alternatively, you can open a list of action logs from the  **Actions** tab
 of the docs repo. You need to find and select the job that corresponds to the
@@ -89,11 +89,6 @@ Run your local copy of ``vale`` to verify the result.
 Fix the errors and push a new commit to run the action again.
 
 ## Known Issues
-
-- The GitHub action does not fail the check when vale reports errors.
-While this should be controlled by the ``fail_on_error`` setting
-it appears there is something wrong with the logic in the
-reviewdog branch.
 
 - The GitHub action has not been packaged yet. Therefore, any configuration
 or rule updates need to be copied manually to each repository.
