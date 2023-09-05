@@ -52,6 +52,8 @@ verify that the action is added by clicking the **Actions** tab and
 confirming that "vale-checks" appears under "All workflows" in the left
 pane.
 
+![Screenshot 2023-09-05 at 11 23 29 AM](https://github.com/ccho-mongodb/test-vale-gh-action/assets/52428683/5ccaddc1-515c-40ef-9ebc-6250c2eb1d9c)
+
 If successfully added, this action runs on commits to forks, owned by
 authorized contributors, of that docs repo.
 
