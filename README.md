@@ -44,6 +44,8 @@ the following file structure:
     └── vale-tdbx.yml
 ```
 
+[Example pull request](https://github.com/mongodb/docs-ecosystem/pull/902)
+
 After you merge these changes into the ``main`` or ``master`` branch, the
 action should automatically run whenever you commit new files.
 
