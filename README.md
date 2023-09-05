@@ -98,7 +98,7 @@ This action currently depends on the following GitHub actions:
 
 - [actions/checkout@master](https://github.com/actions/checkout)
 - [masesgroup/retrieve-changed-files@v2](https://github.com/masesgroup/retrieve-changed-files/releases/tag/v2)
-- [https://github.com/errata-ai/vale-action@reviewdog](https://github.com/errata-ai/vale-action)
+- [vale-action@reviewdog](https://github.com/errata-ai/vale-action)
 
 
 # Install Vale Rules for the CLI
