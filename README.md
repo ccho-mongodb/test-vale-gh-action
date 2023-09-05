@@ -47,7 +47,10 @@ the following file structure:
 [Example pull request](https://github.com/mongodb/docs-ecosystem/pull/902)
 
 After you merge these changes into the ``main`` or ``master`` branch, the
-action should automatically run whenever you commit new files.
+action should automatically run whenever you commit new files. You can
+verify that the action is added by clicking the **Actions** tab and
+confirming that "vale-checks" appears under "All workflows" in the left
+pane.
 
 If successfully added, this action runs on commits to forks, owned by
 authorized contributors, of that docs repo.
