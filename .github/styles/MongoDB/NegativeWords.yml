@@ -3,6 +3,7 @@ message: "Use '%s' instead of the negative word '%s'."
 link: 'https://docs.mongodb.com/meta/style-guide/writing/use-positive-statements/#avoid-negative-words'
 level: error
 ignorecase: true
+nonword: true 
 action:
   name: replace
 swap:
@@ -14,3 +15,7 @@ swap:
   fatal: serious
   destroy: remove, delete
   wrong: incorrect, inconsistent
+
+exceptions:
+  - '.*-fail'
+  - 'fail-.*'
